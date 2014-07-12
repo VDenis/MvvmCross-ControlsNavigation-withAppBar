@@ -1,0 +1,32 @@
+﻿<controls:MvxStoreControl
+    x:Class="MupApps.ControlsNavigation.Sample.WindowsStore.Controls.AppbarControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MupApps.ControlsNavigation.Sample.WindowsStore.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:MupApps.MvvmCross.Plugins.ControlsNavigation.WindowsStore"
+    xmlns:SampleData="using:Blend.SampleData.MailsSampleDataSource"
+    mc:Ignorable="d"
+    Loaded="MvxStoreControl_Loaded"
+    Unloaded="MvxStoreControl_Unloaded"
+    DataContextChanged="MvxStoreControl_DataContextChanged"
+    GotFocus="MvxStoreControl_GotFocus"
+    IsEnabledChanged="MvxStoreControl_IsEnabledChanged"
+    ManipulationStarted="MvxStoreControl_ManipulationStarted">
+    
+
+    <!--<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">-->
+        <Grid>
+            <StackPanel Orientation="Horizontal">
+                <AppBarButton x:Name="DeleteTask" Label="delete task" Icon="Delete" Command="{Binding InformViewModelCommand}" />
+                <AppBarButton x:Name="DeleteTasklist" Label="delete tasklist" Icon="Delete" Command="{Binding TasksDeleteCommand}" />
+                <AppBarButton x:Name="CheckTask" Label="check" Icon="Accept" Command="{Binding TasksCheckCommand}" />
+
+                <AppBarButton x:Name="Sync" Label="sync" Icon="Refresh" Command="{Binding TasklistUpdateCommand}"/>
+                <AppBarButton x:Name="ClearCompleted" Label="clear completed" Icon="Clear" Command="{Binding ClearAllCompletedTasksCommand}" />
+            </StackPanel>
+        </Grid>
+
+        <!--</Grid>-->
+</controls:MvxStoreControl>
