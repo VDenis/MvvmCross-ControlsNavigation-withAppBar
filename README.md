@@ -5,6 +5,9 @@ MvvmCross-ControlsNavigation add Windows Store AppBar support and Setting Flayou
 
 Enhance functionality of "MvvmCross-ControlsNavigation" plugin by adding Windows Store Appbar and Setting flayout support in case of master-detail list navigation with multiple ViewModel on a one View.
 
+More information about "MvvmCross-ControlsNavigation-withAppBar" you could find here:
+http://stackoverflow.com/questions/24353609/mvvmcross-windows-store-how-to-bind-different-viewmodels-to-appbar/24418344#24418344
+
 More information about MvvmCross and "MvvmCross-ControlsNavigation" plugin you could find here:
 https://github.com/MvvmCross/MvvmCross
 
