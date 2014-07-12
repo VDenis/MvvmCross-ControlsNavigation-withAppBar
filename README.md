@@ -7,6 +7,7 @@ Enhance functionality of "MvvmCross-ControlsNavigation" plugin by adding Windows
 
 More information about MvvmCross and "MvvmCross-ControlsNavigation" plugin you could find here:
 https://github.com/MvvmCross/MvvmCross
+
 https://github.com/ChristianRuiz/MvvmCross-ControlsNavigation
 
 
